@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face
+{
+font-family: FZHY;
+src: url("./FZCHYK.TTF");
+ }
+
+body
+{
+   
+}
+ 
+ ul
+ {
+    list-style: none;
+ }
+/* 导航栏（想弄个一直处于顶部的） */
+ #TOP
+ {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #292b32;
+    opacity: 0.9;
+ }
+
+#TOP .menu
+{
+    /* padding: 0px 20px; */
+}
+#TOP .menu>li
+{
+    display: inline;
+    padding: 20px;
+}
+
+ #TOP .menu>li>a
+ {
+    line-height: 60px;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+ }
+/* 导航栏Shion257标签默认变红 */
+ #TOP .menu>.Shion257
+ {
+   padding-bottom: 17px;
+   border-color: #292b32;
+   border-bottom: thick solid #ff3465;
+   border-radius: 3px;
+ }
+ #TOP .menu>.Shion257 a
+ {
+    color: #ff3465;
+ }
+ /* 导航栏变化 */
+ #TOP .menu>li:hover
+ {
+   padding-bottom: 17px;
+    border-color: #292b32;
+    border-bottom: thick solid #ff3465;
+    border-radius: 3px;
+ }
+ /* 父子级同时发生变化（字体同时变化） */
+ #TOP .menu>li:hover a
+ {
+    color: #ff3465;
+ }
+ 
+/* ================================== */
+
+ #CONTENT
+ {
+   display: flex;
+    width: 100%;
+    height: 850px;
+    background-color: aliceblue;
+ }
+
+ .begin
+ {
+   width: 100%;
+   height: 850px;
+   background-color: #292b32;
+   border-bottom: aliceblue;
+   border-radius: 30px;
+   flex-direction: column;
+ }
+
+ 
+ .begin>.begin_top
+ {
+   height: 60px;
+   background-color: #292b32;
+ }
+ .begin>.begin_title
+ {
+   display: flex;
+   justify-content: center;
+   height: 13%;
+   font-family: CMR;
+   font-size: 80px;
+   color: aliceblue;
+   text-shadow: 0 0 10px aliceblue;
+   line-height: 140px;
+}
+
+.begin_en
+{
+   font-family: CPMIN;
+}
+
+.begin_cn
+{
+   font-family: CMR;
+}
+
+.door_shell
+{
+   height: 680px;
+   display: flex;
+   justify-content: center;
+}
+.door
+{
+   height: 410px;
+   width: 190px;
+   background-color: white;
+   margin:auto auto;
+   margin-bottom: 150px;
+   box-shadow: 0 0 35px rgba(255, 255, 255, 0.805),0 0 25px rgba(255, 255, 255, 0.805); 
+}
+
+.main
+{
+   height: 800px;
+   background-color: aliceblue;
+}
+
+.foot
+{
+   border-top: 6px solid #ff3465;
+   height: 150px;
+   background-color: #292b32;
+   padding-top: 2em;
+   text-align: center;
+   color: aliceblue;
+}
+

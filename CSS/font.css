@@ -1,0 +1,23 @@
+@font-face
+{
+font-family: FZHY;
+src: url("../font/FZCHYK.TTF");
+ }
+
+ @font-face
+{
+font-family: CMR;
+src: url("../font/ChillMatrix-Regular.otf");
+ }
+
+ @font-face
+{
+font-family: CPMIN;
+src: url("../font/ChillPixels-Minimalism.otf");
+ }
+
+ @font-face
+{
+font-family: CPM;
+src: url("../font/ChillPixels-Matrix.otf");
+ }

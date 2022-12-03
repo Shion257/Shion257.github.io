@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face
+{
+font-family: FZHY;
+src: url("./FZCHYK.TTF");
+ }
+
+body
+{
+    display: flex;
+    justify-content: center;
+     /* 让弹性内容中心对齐 */
+    align-items: center;
+    height: 750px;
+    background-color: #292b32;
+    flex-direction: column;
+    /* 这样能弄个标题出来 */
+}
+
+.shell 
+{
+    width: 1250px;
+    height: 500px;
+    display: flex; 
+    /* 因为优先级关系，如果不加display: flex; 则不会继承弹性属性 */
+}
+
+.box
+{
+    flex: 1 1 0%;
+    /* 自动适应大小且子元素盒子会平分并占满父盒子 */
+    overflow: hidden; 
+    transition: 1s;
+    /* transition: [属性名] [持续时间] [速度曲线] [延迟时间]; */
+    margin: 130px 20px; 
+    box-shadow: 10px 10px 20px rgba(1, 1, 1, 0.5);
+    border-radius: 20px;
+    border: 10px solid #ff3465;
+    background-color: #ff3465;
+    width: 230px;
+    /* 似乎flex对width的影响更大，这里调width没什么影响 */
+    height: 240px;
+}
+
+.box>a>img
+{
+    width: 100%;
+    /* 图片占满盒子 */
+    height: 80%;
+    /* 留位置给文字 */
+    object-fit: cover;
+    /* 图片保留原始比列,且能保证放大成一样大小（用contain不能保证放大后一样大） */
+    transition: 1s;
+}
+
+.box>a>span
+{
+    font: 400 35px FZHY;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.box>a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.box:hover
+{
+    flex-basis: 40%;
+    /* 可以占shell的多少 */
+    margin: 0px 20px; 
+    height: 500px;
+}
+
+.box:hover>a>img
+{
+    width: 100%;
+    height: 100%;
+    /* 占满盒子 */
+}
+
+.title
+{
+    display: flex;
+    font: 800 70px FZHY;
+    margin-bottom: 20px;
+}

@@ -135,7 +135,7 @@ body
    width: 190px;
    background-color: white;
    margin:auto auto;
-   margin-bottom: 150px;
+   margin-top: 112px;
    box-shadow: 0 0 35px rgba(255, 255, 255, 0.805),0 0 25px rgba(255, 255, 255, 0.805); 
 }
 
@@ -143,10 +143,33 @@ body
 {
    height: 800px;
    background-color: aliceblue;
+   display: flex;
+   justify-content: center;
 }
+
+.main_content
+{
+   height: 800px;
+   width: 90%;
+   border-left: #292b32 double 16px;
+   border-right: #292b32 double 16px;
+   background-color: white;
+   text-indent: 2em;
+}
+
+.main_content p
+{
+   line-height: 40.5px;
+   font-size: 32px;
+   font-family: FZHY;
+   border-bottom: #D7D6D7 solid 4px;
+}
+
 
 .foot
 {
+   display: flex;
+   flex-direction: column;
    border-top: 6px solid #ff3465;
    height: 150px;
    background-color: #292b32;

@@ -334,8 +334,10 @@ body
 
 .foot
 {
+   display: flex;
+   flex-direction: column;
    border-top: 6px solid #ff3465;
-   height: 160px;
+   height: 150px;
    background-color: #292b32;
    padding-top: 2em;
    text-align: center;
